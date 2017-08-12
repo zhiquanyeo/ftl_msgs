@@ -12,17 +12,20 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+add_message_files(
+  FILES
+  IOMsg.msg
+  IOMsgArray.msg
+  PwmMsg.msg
+  PwmMsgArray.msg
+  IOConfigMsg.msg
+)
 
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
-  GetDigitalInput.srv
-  GetAnalogInput.srv
+  IOConfig.srv
+  Command.srv
 )
 
 ## Generate actions in the 'action' folder

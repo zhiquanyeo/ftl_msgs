@@ -1,0 +1,6 @@
+int32 CMD_START = 0
+int32 CMD_STOP = 1
+
+int32[] data
+---
+bool success
